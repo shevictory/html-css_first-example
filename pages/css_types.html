@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS виды и приоритет</title>
+  <!-- внешние -->
+  <link href="./../css/styles.css" rel="stylesheet"/>
+  <!-- внутренние -->
+  <style>
+    h2 {
+      /* type selector = 1 point` */
+      /* 1px = 1/96 дюйма */
+      font-size: 24px;
+      color:chocolate;
+      text-align: center;
+    }
+    /* class selector = 10 points */
+    .yellowColorText {
+      color: yellow
+    }
+    /* id selector = 100 points */
+    #heading2 {
+      color:coral
+    }
+    /* от абстрактного к конкретному */
+    /* приоритетность в инструментах разработчика */
+    /* приоритет суммируется: 1+100+10=111 */
+    h2#heading2.yellowColorText {
+      color: cornflowerblue;
+    }
+  </style>
+</head>
+<body>
+  <!-- встроенные -->
+  <p style="color:blueviolet">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum asperiores quam delectus cupiditate placeat quisquam incidunt ipsa. Eaque sequi quia deleniti, obcaecati earum voluptatibus a itaque voluptate! Quos, laudantium iste.</p>
+  
+  <h2>Lorem ipsum dolor sit amet.</h2>
+  <h2 id="heading2">Doloremque saepe provident maxime molestias.</h2>
+  <h2>Eaque quasi numquam in incidunt?</h2>
+  <h2 class="yellowColorText">Incidunt, assumenda numquam! Est, assumenda!</h2>
+  <h2>Modi expedita deserunt amet vel.</h2>
+  <h2>Eum tenetur dicta nostrum facere.</h2>
+  <h2>Suscipit quasi dicta sint? Distinctio.</h2>
+  <h2 class="yellowColorText">Minima sequi nostrum voluptatem non!</h2>
+  <h2>Expedita similique voluptates rem quaerat.</h2>
+  <h2 style="color: aqua; font-size: 100px; text-align: right;">Repellat alias fugit earum. Quo.</h2>
+  <!-- inline style = 100 points -->
+  <div class="yellowColorText">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum et, nihil maiores nobis, totam dolores quaerat aspernatur architecto optio quam eveniet asperiores beatae quis temporibus? Temporibus sunt repellendus itaque ipsa architecto vero libero tempore ipsum earum. Iusto neque modi nisi, unde, eligendi sint facilis deserunt dolores temporibus, atque rem perspiciatis!
+  </div>
+</body>
+</html>

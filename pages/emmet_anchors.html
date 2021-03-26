@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Emmet, anchors</title>
+</head>
+<body>
+  
+  <!-- Emmet > + * () . # lorem {} $ -->
+    <!-- ul>li{List Item $}*5 -->
+    <!-- h1+(article>h2+p)*2 -->
+    <!-- ol>(li>ol>(li>p)*2)*3^p -->
+    <!-- h1>lorem3^(article>h2>lorem5^p>lorem50)*2 -->
+    <!-- h1.class1+nav#nav>ul>li.liClass*5 -->
+    <!-- h1.classh1[title="Here are header"]+p{text text text} -->
+    <!-- ul>li.classOfItem${item $$}*5 -->
+    <!-- ul>li.classOfItem$@-{item $@2}*15 -->
+
+  <!-- Якорь (якорная ссылка) -->
+  <!-- nav>ul>(li>a[href="#article$"]{Article Title $})*10 -->
+  <nav>
+    <ul>
+      <li><a href="#article1">Article Title 1</a></li>
+      <li><a href="#article2">Article Title 2</a></li>
+      <li><a href="#article3">Article Title 3</a></li>
+      <li><a href="#article4">Article Title 4</a></li>
+      <li><a href="#article5">Article Title 5</a></li>
+      <li><a href="#article6">Article Title 6</a></li>
+      <li><a href="#article7">Article Title 7</a></li>
+      <li><a href="#article8">Article Title 8</a></li>
+      <li><a href="#article9">Article Title 9</a></li>
+      <li><a href="#article10">Article Title 10</a></li>
+    </ul>
+  </nav>
+  <!-- (article#article$>h2{Article Title $}+p>lorem15)*10 -->
+  <article id="article1">
+    <h2>Article Title 1</h2>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint, numquam!</p>
+  </article>
+  <article id="article2">
+    <h2>Article Title 2</h2>
+    <p>Vel excepturi impedit eligendi maxime maiores accusantium aspernatur doloribus unde?</p>
+  </article>
+  <article id="article3">
+    <h2>Article Title 3</h2>
+    <p>Possimus eaque culpa maiores incidunt suscipit cumque mollitia dolores provident!</p>
+  </article>
+  <article id="article4">
+    <h2>Article Title 4</h2>
+    <p>Ea corporis totam nihil vel possimus laboriosam labore nobis maiores!</p>
+  </article>
+  <article id="article5">
+    <h2>Article Title 5</h2>
+    <p>Inventore repellendus atque molestias deleniti, esse dicta veniam sapiente ipsam!</p>
+  </article>
+  <article id="article6">
+    <h2>Article Title 6</h2>
+    <p>Molestias aspernatur quod harum incidunt quasi tenetur omnis debitis odit.</p>
+  </article>
+  <article id="article7">
+    <h2>Article Title 7</h2>
+    <p>Error ut recusandae ipsa consequatur labore harum facere. Ipsa, vero!</p>
+  </article>
+  <article id="article8">
+    <h2>Article Title 8</h2>
+    <p>Nesciunt earum pariatur, in soluta eius repudiandae eaque qui sint.</p>
+  </article>
+  <article id="article9">
+    <h2>Article Title 9</h2>
+    <p>Eos recusandae, nisi impedit nam id odit saepe alias quis!</p>
+  </article>
+  <article id="article10">
+    <h2>Article Title 10</h2>
+    <p>Similique ex sit fugiat praesentium voluptatum, corrupti dolorem veniam porro.</p>
+  </article>
+
+  <!-- Добавить еще страничку и настроить между ними якорные ссылки -->
+
+</body>
+</html>
