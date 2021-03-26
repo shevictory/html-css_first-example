@@ -1,7 +1,29 @@
 /* Правило:
 селектор {
   свойство: значение;
-} */
+} 
+*/
 
-/* text-transform(для именования кнопок в одном стиле)
-text-decoration(-line, -style, -color, -thickness) (ссылки) */
+p {
+  color:blueviolet;
+  font-size: 20px;
+  text-align: left;
+  direction: ltr;
+}
+/* 
+  Text formatting:
+  text-transform(для именования кнопок в одном стиле)
+  text-decoration(-line, -style, -color, -thickness) (ссылки) 
+*/
+button {
+  text-transform: capitalize;
+}
+
+a {
+  text-decoration: none;
+}
+
+p.property {
+  line-height: 1em;
+  letter-spacing: 0.05em;
+}
