@@ -1,0 +1,20 @@
+article {
+  /* наследуемые */
+  font-size: 50px;
+  color:lawngreen;
+  /* ненаследуемые */
+  border: 5px solid yellow;
+}
+
+p {
+  /* get from parent */
+  border: inherit;
+  /* set default */
+  color: initial;
+}
+
+h2 {
+  /* сбросить до дефолтных */
+  border:unset; 
+  color: unset;
+}
