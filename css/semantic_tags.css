@@ -1,0 +1,38 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+header {
+  background-color: tomato;
+  height: 100px;
+}
+
+nav {
+  background-color: cadetblue;
+}
+
+nav > ul > li {
+  display: inline-block;
+}
+
+.mainContainer {
+  background-color: violet;
+  display: flex;
+  align-items: stretch;
+}
+
+main {
+  background-color: yellow;
+}
+
+aside {
+  background-color: yellowgreen;
+}
+
+footer {
+  background-color: blue;
+  height: 100px;
+  /* margin-top: auto; */
+}
